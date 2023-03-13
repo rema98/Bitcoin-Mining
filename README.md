@@ -9,9 +9,9 @@ number of leading 0's.The hash you are required to use is SHA-256.
 The goal of this project is to use F# and the actor model to build a good solution to this problem
 that runs well on multi-core machines.
 ## Requirements
-###Input: The input provided will be, the required number of 0's of the bitcoin(K) and workload(N).
-###Output: Print the input string(randomly generated), and the corresponding SHA256 hash separated
-by a TAB, for each of the bitcoins you  nd.
+* Input: The input provided will be, the required number of 0's of the bitcoin(K) and workload(N).
+* Output: Print the input string(randomly generated), and the corresponding SHA256 hash separated
+by a TAB, for each of the bitcoins you find.
 ## Solution
  * We implemented a remote actor model using two machines to mine bitcoins.
  * In each machine, the number of actors are created based on the number of cores in that machine.
@@ -41,5 +41,5 @@ Note: This should be done before starting server
 * Server machine:
 dotnet fsi server.fsx N K
 ## Findings
-• The coin with the most 0s you managed to find: 8.
-• The largest number of working machines you were able to run your code with: 2.
+* The coin with the most 0s you managed to find: 8.
+* The largest number of working machines you were able to run your code with: 2.
